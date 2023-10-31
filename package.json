@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "homepage": "yumekawa-holdings.com"
   },
   "dependencies": {
     "react": "^18",

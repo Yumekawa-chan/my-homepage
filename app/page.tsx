@@ -17,52 +17,41 @@ function getRandomPastelColor() {
   return pastelColors[randomIndex];
 }
 
+function generateBubbleStyle(position: {
+  top: string;
+  left: string;
+}): React.CSSProperties {
+  return {
+    ...position,
+    "--bubble-color": getRandomPastelColor(),
+  } as React.CSSProperties;
+}
+
 function Home() {
   return (
     <div className="flex flex-col h-screen bg-gradient-to-br from-pink-100 to-purple-200 relative">
       <Header />
 
       <div className="flex-grow flex items-center justify-center relative">
-        {/* 泡の要素を追加し、style属性でランダムな背景色を設定 */}
         <div
           className="bubble small"
-          style={{
-            top: "10%",
-            left: "10%",
-            "--bubble-color": getRandomPastelColor(),
-          }}
+          style={generateBubbleStyle({ top: "10%", left: "10%" })}
         ></div>
         <div
           className="bubble medium"
-          style={{
-            top: "30%",
-            left: "40%",
-            "--bubble-color": getRandomPastelColor(),
-          }}
+          style={generateBubbleStyle({ top: "30%", left: "40%" })}
         ></div>
         <div
           className="bubble large"
-          style={{
-            top: "50%",
-            left: "70%",
-            "--bubble-color": getRandomPastelColor(),
-          }}
+          style={generateBubbleStyle({ top: "50%", left: "70%" })}
         ></div>
         <div
           className="bubble small"
-          style={{
-            top: "70%",
-            left: "20%",
-            "--bubble-color": getRandomPastelColor(),
-          }}
+          style={generateBubbleStyle({ top: "70%", left: "20%" })}
         ></div>
         <div
           className="bubble medium"
-          style={{
-            top: "20%",
-            left: "80%",
-            "--bubble-color": getRandomPastelColor(),
-          }}
+          style={generateBubbleStyle({ top: "20%", left: "80%" })}
         ></div>
 
         <Image

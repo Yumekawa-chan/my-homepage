@@ -28,7 +28,10 @@ function generateBubbleStyle(position: {
 
 function Home() {
   return (
-    <div className="flex flex-col h-screen bg-gradient-to-br from-pink-100 to-purple-200 relative">
+    <div
+      className="flex flex-col h-screen bg-gradient-to-br from-pink-100 to-purple-200 relative"
+      style={{ fontFamily: "DotGothic16" }}
+    >
       <Header />
 
       <div className="flex-grow flex items-center justify-center relative">

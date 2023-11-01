@@ -50,7 +50,31 @@
     animation-duration: 11s;
 }
 
-/* レスポンシブ対応のスタイルを追加 */
 @media (max-width: 768px) {
-    /* ここにモバイル用のスタイルを追加 */
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    .text-2xl {
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 1rem 0;
+    }
+}
+
+@font-face {
+    font-family: 'DotGothic16';
+    src: url('/fonts/DotGothic16-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'DotGothic16', sans-serif;
 }

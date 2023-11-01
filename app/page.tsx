@@ -1,8 +1,8 @@
+"use client";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 
-// パステルカラーの配列
 const pastelColors = [
   "rgba(255, 209, 220, 0.6)", // パステルピンク
   "rgba(255, 255, 179, 0.6)", // パステルイエロー
@@ -11,7 +11,6 @@ const pastelColors = [
   "rgba(179, 209, 255, 0.6)", // パステルブルー
 ];
 
-// ランダムなパステルカラーを返す関数
 function getRandomPastelColor() {
   const randomIndex = Math.floor(Math.random() * pastelColors.length);
   return pastelColors[randomIndex];
@@ -63,7 +62,7 @@ function Home() {
         />
 
         <div className="text-center z-20">
-          <h1 className="text-7xl font-bold text-pink-600 shadow-text">
+          <h1 className="text-7xl font-bold text-pink-600 shadow-text md:text-5xl sm:text-4xl">
             Yumekawa Holdings
           </h1>
           <p className="text-2xl text-purple-600 mt-4 shadow-text">

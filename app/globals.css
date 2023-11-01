@@ -4,12 +4,8 @@
 
 .shadow-text {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.14);
-  }
+}
 
-  
-  
-
-/* 泡のアニメーション */
 @keyframes bubbleFloat {
     0% {
       transform: translateY(0);
@@ -22,36 +18,39 @@
       transform: translateY(-20vh);
       opacity: 0;
     }
-  }
-  
-  .bubble {
+}
+
+.bubble {
     position: absolute;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.4);
     animation: bubbleFloat 6s infinite;
-    pointer-events: none; /* 泡が他の要素の上に来た場合にクリックを妨げないようにする */
+    pointer-events: none; 
     background-color: var(--bubble-color, rgba(255, 255, 255, 0.4));
-  }
-  
-  /* さまざまなサイズの泡のスタイル */
-  .bubble.small {
+}
+
+.bubble.small {
     width: 20px;
     height: 20px;
     animation-delay: 1s;
     animation-duration: 7s;
-  }
-  
-  .bubble.medium {
+}
+
+.bubble.medium {
     width: 40px;
     height: 40px;
     animation-delay: 3s;
     animation-duration: 9s;
-  }
-  
-  .bubble.large {
+}
+
+.bubble.large {
     width: 60px;
     height: 60px;
     animation-delay: 5s;
     animation-duration: 11s;
-  }
-  
+}
+
+/* レスポンシブ対応のスタイルを追加 */
+@media (max-width: 768px) {
+    /* ここにモバイル用のスタイルを追加 */
+}

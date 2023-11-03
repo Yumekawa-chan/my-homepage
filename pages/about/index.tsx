@@ -14,7 +14,7 @@ function About() {
       <Header />
 
       <section className="text-center p-4 md:p-8 flex flex-col items-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-4">Mikihiro Su zuki</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-4">Mikihiro Suzuki</h1>
         <div className="mb-4"> 
           <Image src="/star.png" alt="Mikihiro Suzuki" width={150} height={150} />
         </div>

@@ -10,7 +10,7 @@ function Header() {
       <Link href="/">
         <span className="hover:text-pink-200 cursor-pointer">TOP🍭</span>
       </Link>
-      <Link href="/about/">
+      <Link href="/about.html">
         <span className="hover:text-pink-200 cursor-pointer">ABOUT ME🦄</span>
       </Link>
       <Link href="/achivement">
@@ -18,7 +18,7 @@ function Header() {
           ACHIVEMENT🌈
         </span>
       </Link>
-      <Link href="/contact/">
+      <Link href="/contact.html">
         <span className="hover:text-pink-200 cursor-pointer">CONTACT🍼</span>
       </Link>
     </nav>

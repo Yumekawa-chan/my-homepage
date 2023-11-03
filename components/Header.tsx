@@ -18,7 +18,7 @@ function Header() {
           APPLICATION🌈
         </span>
       </Link>
-      <Link href="/contact">
+      <Link href="/contact.html">
         <span className="hover:text-pink-200 cursor-pointer">CONTACT🍼</span>
       </Link>
     </nav>

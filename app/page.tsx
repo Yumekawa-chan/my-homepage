@@ -3,29 +3,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 
-const pastelColors = [
-  "rgba(255, 209, 220, 0.6)", // パステルピンク
-  "rgba(255, 255, 179, 0.6)", // パステルイエロー
-  "rgba(179, 255, 207, 0.6)", // パステルグリーン
-  "rgba(255, 224, 179, 0.6)", // パステルオレンジ
-  "rgba(179, 209, 255, 0.6)", // パステルブルー
-];
-
-function getRandomPastelColor() {
-  const randomIndex = Math.floor(Math.random() * pastelColors.length);
-  return pastelColors[randomIndex];
-}
-
-function generateBubbleStyle(position: {
-  top: string;
-  left: string;
-}): React.CSSProperties {
-  return {
-    ...position,
-    "--bubble-color": getRandomPastelColor(),
-  } as React.CSSProperties;
-}
-
 function Home() {
   return (
     <div
@@ -35,27 +12,6 @@ function Home() {
       <Header />
 
       <div className="flex-grow flex items-center justify-center relative">
-        <div
-          className="bubble small"
-          style={generateBubbleStyle({ top: "10%", left: "10%" })}
-        ></div>
-        <div
-          className="bubble medium"
-          style={generateBubbleStyle({ top: "30%", left: "40%" })}
-        ></div>
-        <div
-          className="bubble large"
-          style={generateBubbleStyle({ top: "50%", left: "70%" })}
-        ></div>
-        <div
-          className="bubble small"
-          style={generateBubbleStyle({ top: "70%", left: "20%" })}
-        ></div>
-        <div
-          className="bubble medium"
-          style={generateBubbleStyle({ top: "20%", left: "80%" })}
-        ></div>
-
         <Image
           src="/unicorn.png"
           alt="Yumekawa Unicorn"

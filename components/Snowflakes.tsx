@@ -1,7 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 
-function Snowflakes() {
-  const canvasRef = useRef(null);
+interface Snowflake {
+  x: number;
+  y: number;
+  radius: number;
+  speedX: number;
+  speedY: number;
+  color: string;
+}
+
+function Snowflakes(): React.JSX.Element {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
@@ -10,12 +19,16 @@ function Snowflakes() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (canvas === null) return; // early return if canvas is null
+
     const ctx = canvas.getContext("2d");
-    const snowflakes = [];
+    if (!ctx) return;
+
+    const snowflakes: Snowflake[] = [];
 
     function createSnowflake() {
-      const x = Math.random() * canvas.width;
-      const y = Math.random() * canvas.height;
+      const x = Math.random() * canvas!.width;
+      const y = Math.random() * canvas!.height;
       const radius = Math.random() * 4;
       const speedX = Math.random() * 3 - 1.5;
       const speedY = Math.random() + 1;
@@ -25,21 +38,23 @@ function Snowflakes() {
     }
 
     function updateSnowflakes() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (ctx) {
+        ctx.clearRect(0, 0, canvas!.width, canvas!.height);
 
-      for (const snowflake of snowflakes) {
-        snowflake.x += snowflake.speedX;
-        snowflake.y += snowflake.speedY;
+        for (const snowflake of snowflakes) {
+          snowflake.x += snowflake.speedX;
+          snowflake.y += snowflake.speedY;
 
-        if (snowflake.y > canvas.height) {
-          snowflake.y = 0;
-          snowflake.x = Math.random() * canvas.width;
+          if (snowflake.y > canvas!.height) {
+            snowflake.y = 0;
+            snowflake.x = Math.random() * canvas!.width;
+          }
+
+          ctx.beginPath();
+          ctx.arc(snowflake.x, snowflake.y, snowflake.radius, 0, Math.PI * 2);
+          ctx.fillStyle = snowflake.color;
+          ctx.fill();
         }
-
-        ctx.beginPath();
-        ctx.arc(snowflake.x, snowflake.y, snowflake.radius, 0, Math.PI * 2);
-        ctx.fillStyle = snowflake.color;
-        ctx.fill();
       }
 
       requestAnimationFrame(updateSnowflakes);

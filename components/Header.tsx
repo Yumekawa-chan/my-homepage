@@ -13,9 +13,9 @@ function Header() {
       <Link href="/about.html">
         <span className="hover:text-pink-200 cursor-pointer">ABOUT ME🦄</span>
       </Link>
-      <Link href="/achivement">
+      <Link href="/APPLICATION">
         <span className="hover:text-pink-200 cursor-pointer">
-          ACHIVEMENT🌈
+        APPLICATION🌈
         </span>
       </Link>
       <Link href="/contact.html">

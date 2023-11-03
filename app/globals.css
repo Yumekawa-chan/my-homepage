@@ -34,3 +34,8 @@
 body {
     font-family: 'DotGothic16', sans-serif;
 }
+
+.menu-transition {
+    transition: max-height 2.5s ease-in-out;
+  }
+  

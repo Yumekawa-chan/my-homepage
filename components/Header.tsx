@@ -1,3 +1,4 @@
+// Header component
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -54,7 +55,9 @@ function Header() {
             </button>
           </div>
         </div>
-        {isMenuOpen && <div className="md:hidden">{navLinks}</div>}
+        <div className={`md:hidden overflow-hidden menu-transition ${isMenuOpen ? 'max-h-screen' : 'max-h-0'}`}>
+          {navLinks}
+        </div>
       </div>
     </header>
   );

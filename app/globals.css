@@ -36,6 +36,6 @@ body {
 }
 
 .menu-transition {
-    transition: max-height 2.5s ease-in-out;
+    transition: max-height 2s ease-in-out;
   }
   

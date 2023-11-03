@@ -1,7 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function Snowflakes() {
   const canvasRef = useRef(null);
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    setDimensions({ width: window.innerWidth, height: window.innerHeight });
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -49,13 +54,13 @@ function Snowflakes() {
     return () => {
       snowflakes.length = 0;
     };
-  }, []);
+  }, [dimensions]);
 
   return (
     <canvas
       ref={canvasRef}
-      width={window.innerWidth}
-      height={window.innerHeight}
+      width={dimensions.width}
+      height={dimensions.height}
       style={{ position: "absolute", top: 0, left: 0, zIndex: 0 }}
     />
   );

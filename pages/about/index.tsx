@@ -19,14 +19,14 @@ function About() {
         </h1>
         <div className="mb-4">
           <Image
-            src="/star.png"
+            src="/me.png"
             alt="Mikihiro Suzuki"
-            width={150}
-            height={150}
+            width={300}
+            height={300}
           />
         </div>
         <p className="text-xl text-purple-600 mb-8 text-center">
-          Hi there! Call me Mikky! Despite creating such a cute website, I`m
+          Hi there👍 Call me Mikky! Despite creating such a cute website, I`m
           actually a burly guy who`s into hardcore weight training! 💪
           <br />
           At university, I`m studying Computer Vision.👀

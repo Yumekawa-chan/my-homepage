@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import "../../app/globals.css";
+import "../app/globals.css";
 
 function Custom404() {
   return (

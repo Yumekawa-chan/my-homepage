@@ -19,7 +19,7 @@ function Application() {
           <Link href="https:keiba-kiroku.com">
             <div className="bg-white p-4 shadow-md rounded-md flex flex-col items-center transition duration-300 transform hover:bg-pink-200 hover:shadow-lg hover:scale-105">
               <img
-                src="/keiba_icon.png"
+                src="https://keiba_icon.png"
                 alt="Application 1"
                 width={200}
                 className="mb-4"

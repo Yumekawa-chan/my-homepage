@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
+    "gray-matter": "^4.0.3",
     "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-markdown": "^9.0.1",
+    "rehype-raw": "^7.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",

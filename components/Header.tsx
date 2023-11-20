@@ -11,12 +11,15 @@ function Header() {
       <Link href="/">
         <span className="hover:text-pink-200 cursor-pointer">TOP🍭</span>
       </Link>
+      <Link href="/news.html">
+        <span className="hover:text-pink-200 cursor-pointer">NEWS🎀</span>
+      </Link>
       <Link href="/about.html">
         <span className="hover:text-pink-200 cursor-pointer">ABOUT ME🦄</span>
       </Link>
       <Link href="/application.html">
         <span className="hover:text-pink-200 cursor-pointer">
-        APPLICATION🌈
+          APPLICATION🌈
         </span>
       </Link>
       <Link href="/contact.html">
@@ -55,7 +58,11 @@ function Header() {
             </button>
           </div>
         </div>
-        <div className={`md:hidden overflow-hidden menu-transition ${isMenuOpen ? 'max-h-screen' : 'max-h-0'}`}>
+        <div
+          className={`md:hidden overflow-hidden menu-transition ${
+            isMenuOpen ? "max-h-screen" : "max-h-0"
+          }`}
+        >
           {navLinks}
         </div>
       </div>

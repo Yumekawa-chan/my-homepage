@@ -21,7 +21,7 @@ function Contact() {
         (result) => {
           console.log(result.text);
           alert("Message sent successfully!");
-          form.current!.reset(); // フォームをリセット
+          form.current!.reset();
         },
         (error) => {
           console.log(error.text);
@@ -32,11 +32,11 @@ function Contact() {
 
   return (
     <div className="flex flex-col min-h-screen bg-pink-100">
-      {" "}
-      {/* 背景色を変更する */}
       <Header />
       <div className="flex-grow container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-4 text-purple-500">Contact Me</h1>
+        <h1 className="text-2xl font-bold mb-4 text-purple-500 text-center">
+          Contact Me
+        </h1>
         <div className="mb-4 text-purple-400">
           <p>Address:</p>
           <p>5 Asahi-cho, Senju, Adachi-ku, Tokyo, Japan</p>

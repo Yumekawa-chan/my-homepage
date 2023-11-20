@@ -1,4 +1,3 @@
-// pages/about.tsx
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -18,12 +17,7 @@ function About() {
           Mikihiro Suzuki
         </h1>
         <div className="mb-4">
-          <Image
-            src="/me.png"
-            alt="Mikihiro Suzuki"
-            width={300}
-            height={300}
-          />
+          <Image src="/me.png" alt="Mikihiro Suzuki" width={300} height={300} />
         </div>
         <p className="text-xl text-purple-600 mb-8 text-center">
           Hi there👍 Call me Mikky! Despite creating such a cute website, I`m

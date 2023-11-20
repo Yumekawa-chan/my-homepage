@@ -11,12 +11,12 @@ function Application() {
       <Header />
 
       <div className="flex-grow container mx-auto p-4 md:p-8">
-        <h1 className="text-2xl md:text-3xl font-bold text-purple-600 mb-4">
+        <h1 className="text-2xl md:text-3xl font-bold text-purple-600 mb-4 text-center">
           Applications
         </h1>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Link href="https://thoroughbred-finance-manager.vercel.app/">
+          <Link href="https:keiba-kiroku.com">
             <div className="bg-white p-4 shadow-md rounded-md flex flex-col items-center transition duration-300 transform hover:bg-pink-200 hover:shadow-lg hover:scale-105">
               <img
                 src="/keiba_icon.png"

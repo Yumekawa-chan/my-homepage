@@ -16,10 +16,10 @@ function Application() {
         </h1>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Link href="https:keiba-kiroku.com">
+          <Link href="https://keiba-kiroku.com">
             <div className="bg-white p-4 shadow-md rounded-md flex flex-col items-center transition duration-300 transform hover:bg-pink-200 hover:shadow-lg hover:scale-105">
               <img
-                src="https://keiba_icon.png"
+                src="keiba_icon.png"
                 alt="Application 1"
                 width={200}
                 className="mb-4"

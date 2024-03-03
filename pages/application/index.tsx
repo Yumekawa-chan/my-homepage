@@ -23,6 +23,7 @@ function Application() {
                 src="keiba_icon.png"
                 alt="Application 1"
                 width={200}
+                height={200}
                 className="mb-4"
               />
               <h2 className="text-xl font-bold text-purple-600 mb-2">

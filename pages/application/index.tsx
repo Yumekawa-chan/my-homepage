@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "../../app/globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 function Application() {
   return (
@@ -18,7 +19,7 @@ function Application() {
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link href="https://keiba-kiroku.com">
             <div className="bg-white p-4 shadow-md rounded-md flex flex-col items-center transition duration-300 transform hover:bg-pink-200 hover:shadow-lg hover:scale-105">
-              <img
+              <Image
                 src="keiba_icon.png"
                 alt="Application 1"
                 width={200}

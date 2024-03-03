@@ -61,7 +61,7 @@ function About() {
               <p className="text-purple-400">
                 This website is actually built with Next.js! Front-end
                 development is fun as it`s visually rewarding!
-                Recently, I've been using almost exclusively TypeScript!
+                Recently, I`ve been using almost exclusively TypeScript!
               </p>
             </div>
             <div className="bg-white p-4 shadow-md rounded-md flex flex-col items-center">

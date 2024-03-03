@@ -11,18 +11,18 @@ function Header() {
       <Link href="/">
         <span className="hover:text-pink-200 cursor-pointer">TOP🍭</span>
       </Link>
-      <Link href="/news.html">
+      <Link href="/news">
         <span className="hover:text-pink-200 cursor-pointer">NEWS🎀</span>
       </Link>
-      <Link href="/about.html">
+      <Link href="/about">
         <span className="hover:text-pink-200 cursor-pointer">ABOUT ME🦄</span>
       </Link>
-      <Link href="/application.html">
+      <Link href="/application">
         <span className="hover:text-pink-200 cursor-pointer">
           APPLICATION🌈
         </span>
       </Link>
-      <Link href="/contact.html">
+      <Link href="/contact">
         <span className="hover:text-pink-200 cursor-pointer">CONTACT🍼</span>
       </Link>
     </nav>

@@ -19,7 +19,7 @@ function Snowflakes(): React.JSX.Element {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (canvas === null) return; // early return if canvas is null
+    if (canvas === null) return;
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;

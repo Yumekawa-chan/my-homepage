@@ -58,22 +58,14 @@ function About() {
               <p className="text-purple-400">
                 This website is actually built with Next.js! Front-end
                 development is fun as it`s visually rewarding!
-              </p>
-            </div>
-            <div className="bg-white p-4 shadow-md rounded-md flex flex-col items-center">
-              <Image src="/php.png" alt="PHP" width={150} height={150} />
-              <h3 className="text-xl font-bold text-purple-600 mb-2">PHP</h3>
-              <p className="text-purple-400">
-                Working as a server-side engineer part-time! I use Laravel and
-                Symfony.
+                Recently, I've been using almost exclusively TypeScript!
               </p>
             </div>
             <div className="bg-white p-4 shadow-md rounded-md flex flex-col items-center">
               <Image src="/unity.png" alt="Unity" width={190} height={190} />
               <h3 className="text-xl font-bold text-purple-600 mb-2">Unity</h3>
               <p className="text-purple-400">
-                Occasionally use it for research! Planning to develop VR
-                applications!
+              I am researching VR, so I frequently use Unity. Therefore, I often code in C#.
               </p>
             </div>
           </div>
@@ -127,8 +119,6 @@ function About() {
                 Computer Vision
               </span>
             </div>
-
-            {/* ... other conference entries ... */}
           </div>
         </section>
 
@@ -140,7 +130,7 @@ function About() {
                 AI INNOVATION AWARDS 2022
               </h3>
               <p className="text-purple-400 mb-2">
-                Second Place out of 16 teams, 2021
+                Second Place out of 16 teams
               </p>
               <p className="text-purple-400 mb-4">
                 Secured the second place among 16 teams! 🥈 Served as the team
@@ -156,7 +146,6 @@ function About() {
                 </button>
               </a>
             </div>
-            {/* ... other awards entries ... */}
           </div>
         </section>
       </div>

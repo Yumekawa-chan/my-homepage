@@ -51,9 +51,12 @@ function About() {
               </p>
             </div>
             <div className="bg-white p-4 shadow-md rounded-md flex flex-col items-center">
-              <Image src="/js.png" alt="Javascript" width={100} height={100} />
+              <div className = "flex gap-5">
+                <Image src="/js.png" alt="Javascript" width={100} height={100} />
+                <Image src="/ts.png" alt="Typescript" width={100} height={100} />
+              </div>
               <h3 className="text-xl font-bold text-purple-600 mb-2">
-                Javascript
+                Javascript / TypeScript
               </h3>
               <p className="text-purple-400">
                 This website is actually built with Next.js! Front-end

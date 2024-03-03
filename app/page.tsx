@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Snowflakes from "../components/Snowflakes"; // <-- Import Snowflakes component here
 import Image from "next/image";
+import Link from "next/link";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Home() {
   return (
@@ -33,6 +35,11 @@ function Home() {
           <p className="text-2xl text-purple-600 mt-4 shadow-text">
             Kawaii Dreams, Real Possibilities
           </p>
+          <div className="pt-3 text-pink-600">
+            <Link href="https://github.com/Yumekawa-chan">
+              <GitHubIcon style={{ fontSize: 40 }} />
+            </Link>
+          </div>
         </div>
       </div>
       <Footer />
